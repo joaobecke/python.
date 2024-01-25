@@ -1,0 +1,25 @@
+# Exercícios
+# Crie funções que duplicam, triplicam e quadruplicam
+# o número recebido como parâmetro.
+
+
+# def duplicar(numero): 
+#     return numero * 2
+
+# print(duplicar(2))
+
+
+def criar_multiplicador(multiplicador):
+    def multiplicar(numero):
+        return numero * multiplicador
+    return multiplicar
+
+
+
+duplicar = criar_multiplicador(2)
+triplicar = criar_multiplicador(3)
+quadriplicar = criar_multiplicador(4)
+
+print(quadriplicar(2))
+print(triplicar(2))
+print(duplicar(2))
